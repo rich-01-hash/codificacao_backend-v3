@@ -11,7 +11,12 @@ app.get('/', (req, res) => {
   res.send('amo pietra e aleixxx!')
 })
 
-app.get('/alunos/getAll',)
+app.get('/alunos/getAll',(req,res) => {
+   res.json({
+     sucess:true,
+     data:alunos
+   })
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
